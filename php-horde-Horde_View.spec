@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Horde View API
 Name:		php-horde-Horde_View
-Version:	1.0.0
+Version:	1.0.1
 Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.horde.org/get/%{pearname}-%{version}.tgz
-# Source0-md5:	0338b9c0dfeb517c1aaa1879c004ac6a
+# Source0-md5:	ca2948aac29882d1a9a8ba0ca6ebde7a
 URL:		https://github.com/horde/horde/tree/master/framework/View/
 BuildRequires:	php-channel(pear.horde.org)
 BuildRequires:	php-packagexml2cl
@@ -37,7 +37,7 @@ In PEAR status of this package is: %{status}.
 %prep
 %pear_package_setup
 
-mv ./%{php_pear_dir}/examples/Horde/View examples
+mv docs/Horde_View/examples .
 
 %build
 packagexml2cl package.xml > ChangeLog
