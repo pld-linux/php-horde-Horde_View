@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	Horde_View
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Horde View API
 Name:		php-horde-Horde_View
 Version:	1.0.1
